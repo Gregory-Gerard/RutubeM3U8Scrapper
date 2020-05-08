@@ -1,0 +1,14 @@
+{
+    "name": "gregory/rutube",
+    "description": "Download Rutube video",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Grégory GERARD",
+            "email": "contact@gregory-gerard.dev"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}
