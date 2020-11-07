@@ -84,6 +84,8 @@ $streamList = [
 ];
 ```
 
+If an internal error occurs, RutubeScrapper throw a RutubeScrapperException. Otherwise, if it's a request error (like a 404 or bad request) a GuzzleException is thrown.
+
 ## Use cases
 
 Now with the HLS streams in your possession, you can download a Rutube LiST video with [youtube-dl](https://github.com/ytdl-org/youtube-dl), ffmpeg or streaming it in VLC.
