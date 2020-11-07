@@ -1,6 +1,6 @@
 {
     "name": "gregory/rutube",
-    "description": "Download Rutube video",
+    "description": "RutubeM3U8Scrapper helps you to retrieve a list of HLS streams / M3U8 playlist of a Rutube LiST video, with those HLS streams you can download a video, streaming it in your favorite video player or whatever you want. You still need an account at Rutube LiST website, but you don't need anymore to watch an ad or answer to their quiz.",
     "type": "project",
     "authors": [
         {
@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.5"
+        "guzzlehttp/guzzle": "^6.5",
+      "ext-json": "*"
     }
 }
