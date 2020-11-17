@@ -1,15 +1,17 @@
 <?php
 
+namespace RutubeScrapper;
+
 class RutubeScrapper {
-    protected $endpoints;
-    private $client;
+    protected array $endpoints;
+    private \GuzzleHttp\Client $client;
 
     /**
      * RutubeScrapper constructor.
      */
     public function __construct()
     {
-        $this->client = new GuzzleHttp\Client(['cookies' => true]);
+        $this->client = new \GuzzleHttp\Client(['cookies' => true]);
         $this->endpoints = [
             'login_api' => 'https://pass.rutube.ru/api/accounts/phone/login/',
             'login_social_api' => 'https://rutube.ru/social/auth/rupass/?callback_path=/social/login/rupass/',

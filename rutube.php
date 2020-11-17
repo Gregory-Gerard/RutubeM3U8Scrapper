@@ -1,8 +1,10 @@
 <?php
 
 require_once 'vendor/autoload.php';
-require_once 'RutubeScrapper.php';
+require_once 'src/RutubeScrapper.php';
 require_once 'config.php';
+
+use RutubeScrapper\RutubeScrapper;
 
 global $credentials;
 
@@ -21,6 +23,6 @@ try {
             echo "{$bandwidth} Kbps : {$url}".PHP_EOL;
         }
     }
-} catch (Exception $e) {
+} catch (\Exception $e) {
 	die("[ERROR] {$e->getMessage()}".PHP_EOL);
 }
